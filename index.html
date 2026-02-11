@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scourie - Europe Trip Planner from Inverness</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>Scourie</h1>
+            <p class="subtitle">Weekend Europe Trip Planner &middot; April&ndash;August &middot; From Inverness, Scotland</p>
+        </div>
+        <nav>
+            <button class="nav-btn active" data-view="dashboard">Dashboard</button>
+            <button class="nav-btn" data-view="destinations">Top 25 Destinations</button>
+            <button class="nav-btn" data-view="trips">My 12 Trips</button>
+            <button class="nav-btn" data-view="map">Map Explorer</button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Dashboard View -->
+        <section id="dashboard" class="view active">
+            <div class="dashboard-grid">
+                <div class="dash-card summary-card">
+                    <h2>Trip Overview</h2>
+                    <div class="stats-row">
+                        <div class="stat">
+                            <span class="stat-num">12</span>
+                            <span class="stat-label">Weekend Trips</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">48</span>
+                            <span class="stat-label">Travel Days</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">25</span>
+                            <span class="stat-label">Destinations Rated</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">5</span>
+                            <span class="stat-label">Months (Apr&ndash;Aug)</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dash-card calendar-card">
+                    <h2>Trip Calendar</h2>
+                    <div id="calendar-grid"></div>
+                </div>
+                <div class="dash-card map-preview-card">
+                    <h2>All Routes</h2>
+                    <div id="dashboard-map"></div>
+                </div>
+                <div class="dash-card upcoming-card">
+                    <h2>Upcoming Trips</h2>
+                    <div id="upcoming-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations View -->
+        <section id="destinations" class="view">
+            <div class="destinations-header">
+                <h2>Top 25 European Destinations</h2>
+                <p>Ranked by weather, cultural activities, accessibility from Inverness, and overall value for April&ndash;August travel.</p>
+                <div class="filter-bar">
+                    <label>Sort by:</label>
+                    <select id="sort-destinations">
+                        <option value="overall">Overall Score</option>
+                        <option value="weather">Weather</option>
+                        <option value="culture">Culture &amp; Activities</option>
+                        <option value="access">Accessibility</option>
+                        <option value="value">Value for Money</option>
+                    </select>
+                    <label>Region:</label>
+                    <select id="filter-region">
+                        <option value="all">All Regions</option>
+                        <option value="western">Western Europe</option>
+                        <option value="southern">Southern Europe</option>
+                        <option value="northern">Northern Europe</option>
+                        <option value="central">Central Europe</option>
+                        <option value="eastern">Eastern Europe</option>
+                    </select>
+                </div>
+            </div>
+            <div id="destinations-grid" class="destinations-grid"></div>
+        </section>
+
+        <!-- Trips View -->
+        <section id="trips" class="view">
+            <div class="trips-header">
+                <h2>12 Weekend Trips: April&ndash;August</h2>
+                <p>Each trip is 4 days (Thursday&ndash;Sunday) departing from Inverness. Click a trip for full itinerary and map.</p>
+            </div>
+            <div id="trips-list" class="trips-list"></div>
+            <!-- Trip Detail Modal -->
+            <div id="trip-modal" class="modal hidden">
+                <div class="modal-content">
+                    <button class="modal-close">&times;</button>
+                    <div id="trip-detail"></div>
+                    <div id="trip-map" class="trip-map"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Map Explorer View -->
+        <section id="map" class="view">
+            <div class="map-controls">
+                <h2>Map Explorer</h2>
+                <div class="map-filters">
+                    <button class="map-filter-btn active" data-filter="all">All Destinations</button>
+                    <button class="map-filter-btn" data-filter="trips">Trip Routes</button>
+                    <button class="map-filter-btn" data-filter="weather">Weather Overlay</button>
+                </div>
+            </div>
+            <div id="main-map"></div>
+            <div id="map-sidebar" class="map-sidebar">
+                <div id="map-info"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Scourie &mdash; Europe Trip Planner &middot; All trips originate from Inverness, Scotland (INV)</p>
+    </footer>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
