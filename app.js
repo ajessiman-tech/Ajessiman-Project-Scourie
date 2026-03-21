@@ -138,7 +138,7 @@
 
         grid.innerHTML = filtered.map((d, idx) => `
             <div class="dest-card" data-dest="${d.id}">
-                <div class="dest-card-img" style="background:${d.image};">
+                <div class="dest-card-img" style="background-image:${d.image};">
                     <div class="dest-rank">${idx + 1}</div>
                     <div class="dest-region-tag">${d.region}</div>
                 </div>
@@ -318,13 +318,11 @@
         }
     });
 
-    document.getElementById("trip-modal").addEventListener("click", (e) => {
-        if (e.target === e.currentTarget) {
-            document.getElementById("trip-modal").classList.add("hidden");
-            if (tripModalMap) {
-                tripModalMap.remove();
-                tripModalMap = null;
-            }
+    document.querySelector(".modal-backdrop").addEventListener("click", () => {
+        document.getElementById("trip-modal").classList.add("hidden");
+        if (tripModalMap) {
+            tripModalMap.remove();
+            tripModalMap = null;
         }
     });
 

@@ -30,7 +30,7 @@ const DESTINATIONS = [
         avgTemp: "18-28°C",
         highlights: "Gaudi architecture, La Rambla, beaches, world-class cuisine, vibrant nightlife",
         travel: "Fly INV→BCN (1 stop via LHR/AMS, ~4-5h). Budget airlines available.",
-        image: "linear-gradient(135deg, #e65100, #ff8f00)"
+        image: "url('https://images.unsplash.com/photo-1583422409516-2895a77efed6?w=640&q=80&fit=crop')"
     },
     {
         id: 2,
@@ -48,7 +48,7 @@ const DESTINATIONS = [
         avgTemp: "16-28°C",
         highlights: "Tram 28, Belem Tower, pasteis de nata, Alfama, Sintra day trip, fado music",
         travel: "Fly INV→LIS (1 stop via LHR/EDI, ~5h). Excellent value destination.",
-        image: "linear-gradient(135deg, #f9a825, #ff6f00)"
+        image: "url('https://images.unsplash.com/photo-1585208798174-6cedd86e019a?w=640&q=80&fit=crop')"
     },
     {
         id: 3,
@@ -66,7 +66,7 @@ const DESTINATIONS = [
         avgTemp: "10-22°C",
         highlights: "Canals, Rijksmuseum, Van Gogh Museum, tulip season (April), cycling culture",
         travel: "Fly INV→AMS direct or 1 stop (~2-3h). KLM operates routes. Top connectivity.",
-        image: "linear-gradient(135deg, #ff6d00, #e65100)"
+        image: "url('https://images.unsplash.com/photo-1534351590666-13e3e96b5571?w=640&q=80&fit=crop')"
     },
     {
         id: 4,
@@ -84,7 +84,7 @@ const DESTINATIONS = [
         avgTemp: "14-30°C",
         highlights: "Colosseum, Vatican, Pantheon, Trastevere, Roman Forum, gelato, ancient history",
         travel: "Fly INV→FCO (1 stop, ~5-6h). Ryanair via STN often cheapest.",
-        image: "linear-gradient(135deg, #4e342e, #8d6e63)"
+        image: "url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=640&q=80&fit=crop')"
     },
     {
         id: 5,
@@ -102,7 +102,7 @@ const DESTINATIONS = [
         avgTemp: "10-22°C",
         highlights: "Tivoli Gardens, Nyhavn, cycling culture, New Nordic cuisine, design district",
         travel: "Fly INV→CPH (1 stop via AMS/LHR, ~4h). Good connections.",
-        image: "linear-gradient(135deg, #1565c0, #42a5f5)"
+        image: "url('https://images.unsplash.com/photo-1513622470522-26c3c8a854bc?w=640&q=80&fit=crop')"
     },
     {
         id: 6,
@@ -120,7 +120,7 @@ const DESTINATIONS = [
         avgTemp: "16-29°C",
         highlights: "Old Town walls, Adriatic coast, Game of Thrones sites, island hopping, seafood",
         travel: "Fly INV→DBV (1-2 stops, ~6-7h). Best via LHR or Split.",
-        image: "linear-gradient(135deg, #00838f, #00acc1)"
+        image: "url('https://images.unsplash.com/photo-1555990793-da11153b2473?w=640&q=80&fit=crop')"
     },
     {
         id: 7,
@@ -138,7 +138,7 @@ const DESTINATIONS = [
         avgTemp: "12-25°C",
         highlights: "Eiffel Tower, Louvre, Montmartre, Seine cruises, patisseries, Versailles",
         travel: "Fly INV→CDG/ORY (1 stop via LHR, ~4h). Eurostar option from London.",
-        image: "linear-gradient(135deg, #283593, #5c6bc0)"
+        image: "url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=640&q=80&fit=crop')"
     },
     {
         id: 8,
@@ -156,7 +156,7 @@ const DESTINATIONS = [
         avgTemp: "11-25°C",
         highlights: "Charles Bridge, Old Town Square, Prague Castle, affordable beer, Gothic architecture",
         travel: "Fly INV→PRG (1 stop via AMS/LHR, ~5h). Very affordable once there.",
-        image: "linear-gradient(135deg, #bf360c, #e64a19)"
+        image: "url('https://images.unsplash.com/photo-1541849546-216549ae216d?w=640&q=80&fit=crop')"
     },
     {
         id: 9,
@@ -174,7 +174,7 @@ const DESTINATIONS = [
         avgTemp: "10-19°C",
         highlights: "Edinburgh Castle, Royal Mile, Arthur's Seat, Fringe Festival (Aug), whisky",
         travel: "Direct train INV→EDI (~3.5h). ScotRail. No flights needed!",
-        image: "linear-gradient(135deg, #1b5e20, #388e3c)"
+        image: "url('https://images.unsplash.com/photo-1595982842766-3959c2b0e466?w=640&q=80&fit=crop')"
     },
     {
         id: 10,
@@ -192,7 +192,7 @@ const DESTINATIONS = [
         avgTemp: "5-14°C",
         highlights: "Midnight sun, Golden Circle, Blue Lagoon, whale watching, unique landscapes",
         travel: "Fly INV→KEF (1 stop via EDI/LHR, ~5h). Icelandair connections.",
-        image: "linear-gradient(135deg, #37474f, #607d8b)"
+        image: "url('https://images.unsplash.com/photo-1504829857797-ddff29c27927?w=640&q=80&fit=crop')"
     },
     {
         id: 11,
@@ -210,7 +210,7 @@ const DESTINATIONS = [
         avgTemp: "18-36°C",
         highlights: "Alcazar, flamenco, tapas culture, Plaza de Espana, Feria de Abril",
         travel: "Fly INV→SVQ (1-2 stops, ~6h). Via Madrid or Lisbon.",
-        image: "linear-gradient(135deg, #e65100, #f57c00)"
+        image: "url('https://images.unsplash.com/photo-1515443961218-a51367888e4b?w=640&q=80&fit=crop')"
     },
     {
         id: 12,
@@ -228,7 +228,7 @@ const DESTINATIONS = [
         avgTemp: "12-26°C",
         highlights: "Schonbrunn Palace, opera, coffeehouse culture, Belvedere, Danube cycling",
         travel: "Fly INV→VIE (1 stop via AMS/FRA, ~5-6h).",
-        image: "linear-gradient(135deg, #4a148c, #7b1fa2)"
+        image: "url('https://images.unsplash.com/photo-1516550893923-42d28e5677af?w=640&q=80&fit=crop')"
     },
     {
         id: 13,
@@ -246,7 +246,7 @@ const DESTINATIONS = [
         avgTemp: "8-18°C",
         highlights: "Fjords, Bryggen wharf, Floibanen funicular, hiking, seafood market",
         travel: "Fly INV→BGO (1 stop via AMS/OSL, ~4-5h). Norway in a Nutshell possible.",
-        image: "linear-gradient(135deg, #0d47a1, #1976d2)"
+        image: "url('https://images.unsplash.com/photo-1580137189272-c9379f8864fd?w=640&q=80&fit=crop')"
     },
     {
         id: 14,
@@ -264,7 +264,7 @@ const DESTINATIONS = [
         avgTemp: "13-27°C",
         highlights: "Thermal baths, Parliament building, ruin bars, Danube cruises, Castle Hill",
         travel: "Fly INV→BUD (1 stop via LHR/AMS, ~5-6h). Very affordable.",
-        image: "linear-gradient(135deg, #b71c1c, #d32f2f)"
+        image: "url('https://images.unsplash.com/photo-1549923746-c502d488b3ea?w=640&q=80&fit=crop')"
     },
     {
         id: 15,
@@ -282,7 +282,7 @@ const DESTINATIONS = [
         avgTemp: "10-21°C",
         highlights: "Medieval center, chocolate, canals, beer culture, Market Square, lace-making",
         travel: "Fly INV→BRU (1 stop, ~4h) then 1h train. Or via AMS.",
-        image: "linear-gradient(135deg, #3e2723, #5d4037)"
+        image: "url('https://images.unsplash.com/photo-1559113513-d5e09c78b9dd?w=640&q=80&fit=crop')"
     },
     {
         id: 16,
@@ -300,7 +300,7 @@ const DESTINATIONS = [
         avgTemp: "15-27°C",
         highlights: "Five colorful villages, hiking trails, Mediterranean views, seafood, limoncello",
         travel: "Fly INV→GEN or PSA (1-2 stops, ~6-7h) then train to villages.",
-        image: "linear-gradient(135deg, #f4511e, #ff8a65)"
+        image: "url('https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=640&q=80&fit=crop')"
     },
     {
         id: 17,
@@ -318,7 +318,7 @@ const DESTINATIONS = [
         avgTemp: "10-19°C",
         highlights: "Temple Bar, Trinity College, Guinness Storehouse, literary pubs, coastal walks",
         travel: "Fly INV→DUB (1 stop via EDI, ~3h). Ryanair, very cheap.",
-        image: "linear-gradient(135deg, #1b5e20, #43a047)"
+        image: "url('https://images.unsplash.com/photo-1549918864-48ac978761a4?w=640&q=80&fit=crop')"
     },
     {
         id: 18,
@@ -336,7 +336,7 @@ const DESTINATIONS = [
         avgTemp: "17-30°C",
         highlights: "Diocletian's Palace, island ferries to Hvar & Brac, Adriatic beaches, Krka Falls",
         travel: "Fly INV→SPU (1-2 stops, ~6-7h). Via London or Munich.",
-        image: "linear-gradient(135deg, #006064, #00838f)"
+        image: "url('https://images.unsplash.com/photo-1555990538-1e7d0e094978?w=640&q=80&fit=crop')"
     },
     {
         id: 19,
@@ -354,7 +354,7 @@ const DESTINATIONS = [
         avgTemp: "10-22°C",
         highlights: "Gamla Stan, Vasa Museum, archipelago, midsummer, ABBA Museum, Nordic design",
         travel: "Fly INV→ARN (1 stop via AMS/LHR, ~5h). SAS connections.",
-        image: "linear-gradient(135deg, #0d47a1, #1565c0)"
+        image: "url('https://images.unsplash.com/photo-1509356843151-3e7d96241e11?w=640&q=80&fit=crop')"
     },
     {
         id: 20,
@@ -372,7 +372,7 @@ const DESTINATIONS = [
         avgTemp: "18-29°C",
         highlights: "Caldera views, Oia sunset, volcanic beaches, wine tasting, blue-domed churches",
         travel: "Fly INV→JTR (2 stops, ~8-9h). Via Athens. Book early for summer.",
-        image: "linear-gradient(135deg, #1a237e, #3949ab)"
+        image: "url('https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?w=640&q=80&fit=crop')"
     },
     {
         id: 21,
@@ -390,7 +390,7 @@ const DESTINATIONS = [
         avgTemp: "10-24°C",
         highlights: "Wawel Castle, Old Town, Wieliczka Salt Mine, vibrant food scene, Kazimierz district",
         travel: "Fly INV→KRK (1 stop via LHR, ~5h). Ryanair from Edinburgh.",
-        image: "linear-gradient(135deg, #880e4f, #c2185b)"
+        image: "url('https://images.unsplash.com/photo-1519197924294-4ba991a11128?w=640&q=80&fit=crop')"
     },
     {
         id: 22,
@@ -408,7 +408,7 @@ const DESTINATIONS = [
         avgTemp: "14-24°C",
         highlights: "Pintxos bars, La Concha beach, Basque cuisine, surf culture, old town",
         travel: "Fly INV→EAS or BIQ (1-2 stops, ~5-6h). Via Paris or Madrid.",
-        image: "linear-gradient(135deg, #e65100, #ef6c00)"
+        image: "url('https://images.unsplash.com/photo-1530841377377-3ff06c0ca713?w=640&q=80&fit=crop')"
     },
     {
         id: 23,
@@ -426,7 +426,7 @@ const DESTINATIONS = [
         avgTemp: "8-21°C",
         highlights: "Medieval Old Town, digital nomad hub, craft beer, Kadriorg Park, Baltic charm",
         travel: "Fly INV→TLL (1-2 stops via HEL/RIX, ~6h).",
-        image: "linear-gradient(135deg, #004d40, #00695c)"
+        image: "url('https://images.unsplash.com/photo-1530538095376-a4936b35b5f0?w=640&q=80&fit=crop')"
     },
     {
         id: 24,
@@ -444,7 +444,7 @@ const DESTINATIONS = [
         avgTemp: "15-27°C",
         highlights: "Promenade des Anglais, Old Town, Matisse Museum, day trips to Monaco and Cannes",
         travel: "Fly INV→NCE (1 stop via LHR/CDG, ~4-5h). easyJet options.",
-        image: "linear-gradient(135deg, #01579b, #0288d1)"
+        image: "url('https://images.unsplash.com/photo-1491166617655-0723a0999cfc?w=640&q=80&fit=crop')"
     },
     {
         id: 25,
@@ -462,7 +462,7 @@ const DESTINATIONS = [
         avgTemp: "11-24°C",
         highlights: "Beer gardens, Marienplatz, English Garden, day trips to Neuschwanstein, BMW World",
         travel: "Fly INV→MUC (1 stop via AMS/FRA, ~4-5h). Lufthansa hub.",
-        image: "linear-gradient(135deg, #1a237e, #283593)"
+        image: "url('https://images.unsplash.com/photo-1595867818082-083862f3d630?w=640&q=80&fit=crop')"
     }
 ];
 
